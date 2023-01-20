@@ -7,13 +7,28 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  flex-direction:column;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  outline: 2px solid red;
   /* выше установили ограничения для секции */
+}
+
+section {
+  outline: 2px solid red;
+}
+
+.footer{
+  outline: 2px solid red;
+}
+
+div {
+  outline: 2px solid red;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -28,4 +43,40 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.centered-block {
+  margin: auto;
+  padding:auto;
+}
+
+.logo {
+  background-image: url(../images/logo_place_header.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.logo_place_header {
+position: relative;
+  top: 30px;
+  left:64px;
+}
+
+.logo_size{
+  height:32px;
+  width:228px;
+}
+
+.header__link{
+color:blue;
+}
+.header__main-illustration{
+  background-image: url(../images/header-image.png);
+}
+
+.header__main-illustration_size{
+  height:608px;
+  width:756px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
