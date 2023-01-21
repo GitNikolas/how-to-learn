@@ -16,9 +16,11 @@
   min-height: 600px;
   max-height: 756px;
   outline: 2px solid red;
+  display: flex;
   /* выше установили ограничения для секции */
 }
 
+/* не забудь удалить свойство ниже!!! */
 section {
   outline: 2px solid red;
 }
@@ -27,6 +29,7 @@ section {
   outline: 2px solid red;
 }
 
+/* не забудь удалить свойство ниже!!! */
 div {
   outline: 2px solid red;
 }
@@ -35,6 +38,11 @@ div {
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position:absolute;
+  top:64px;
+  right:0;
+  z-index: 1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -54,10 +62,11 @@ div {
   background-image: url(../images/logo_place_header.svg);
   background-size: auto;
   background-repeat: no-repeat;
+  z-index: 5;
 }
 
 .logo_place_header {
-position: relative;
+position: absolute;
   top: 30px;
   left:64px;
 }
@@ -68,15 +77,96 @@ position: relative;
 }
 
 .header__link{
-color:blue;
+color:#2f80ed;
 }
 .header__main-illustration{
-  background-image: url(../images/header-image.png);
+  /* background-image: url(../images/header-image.png); */
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  z-index: 2;
 }
 
 .header__main-illustration_size{
   height:608px;
   width:756px;
-  background-size: cover;
+  background-size:100%;
   background-repeat: no-repeat;
+}
+
+.header__title{
+  width:730px;
+  position: absolute;
+  left:64px;
+  z-index: 4;
+  align-self:center;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight:600;
+}
+
+.header__subtitle{
+  width:388px;
+  position:absolute;
+  left:64px;
+  bottom:30px;
+  z-index: 3;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight:normal;
+}
+
+.discription{
+  display: flex;
+  margin:100px auto 100px;
+  width: 80%;
+}
+.two-columns{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+
+}
+.two-columns__brief{
+  width:175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight:normal;
+}
+.two-columns__main-text{
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width: 80%;
+  min-width: 784px;
+}
+.two-columns__paragraph{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight:normal;
+  margin:0;
+  padding:0;
+}
+
+.two-columns__paragraph_margin_30{
+  margin:30px 0px 30px;
+}
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight:600;
+}
+
+.two-columns__list{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li{
+  outline: 2px solid red;
+
+}
+ul{
+  outline: 2px solid red;
 }
