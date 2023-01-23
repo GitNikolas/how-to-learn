@@ -47,14 +47,6 @@ div {
   z-index: 1;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 .centered-block {
   margin: auto;
   padding:auto;
@@ -80,6 +72,7 @@ position: absolute;
 
 .header__link{
 color:#2f80ed;
+text-decoration:none;
 }
 .header__main-illustration{
   background-image: url(../images/header-image.png);
@@ -204,6 +197,7 @@ ul{
   line-height: 34px;
   font-size: 24px;
   font-weight:normal;
+
 }
 
 .table{
@@ -246,6 +240,101 @@ ul{
   margin:0;
 }
 
-.table__cell :nth-of-type(2n) {
+.table__cell :nth-of-type(2) {
   margin:20px 0px 20px;
+}
+
+.feynman{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  position: relative;
+  height: 890px;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: left 0px bottom 0px;
+}
+.feynman__container{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.feynman_margin_top{
+  margin-top: 100px;
+}
+
+.feynman__title{
+  display: flex;
+  margin:100px auto 70px;
+  width:648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight:600;
+  text-align: center;
+}
+
+.feynman__subtitle{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight:normal;
+  text-align: center;
+}
+.feynman__link{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight:normal;
+  color:#2f80ed;
+  position: absolute;
+  top:50%;
+  right:48px;
+  text-decoration:none;
+}
+
+.kaufman{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background-color: #1f1f1f;
+}
+.kaufman__section-subtitle_text{
+  width:60%;
+}
+.kaufman_margin_90{
+  margin:90px 0px 90px;
+}
+
+.kaufman__section-title_margin{
+  margin: 90px auto 20px;
+}
+
+.kaufman__table_margin-bottom_90{
+  margin-bottom: 90px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+.table__cell_theme_dark :first-child{
+  margin:0px;
+}
+.table__cell_theme_dark :nth-of-type(2){
+  margin-top:20px;
+}
+
+.section-title_theme_dark{
+  width: 60%;
+  display: flex;
+  justify-content:center;
+  color:white;
+}
+
+.section-subtitle_text_theme_dark{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight:normal;
+  color: white;
 }
