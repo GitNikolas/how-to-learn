@@ -1,0 +1,10 @@
+.cards__image{
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  overflow: hidden;
+  height: 160px;
+  width: 160px;
+  margin: 0 40px 0;
+}
