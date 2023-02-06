@@ -1,0 +1,13 @@
+.resources__link{
+  display: flex;
+  justify-content: center;
+  color:#2f80ed;
+  text-decoration:none;
+  transition: linear .3s;
+  width: 270px;
+  height: 38px;
+}
+
+.resources__link:hover{
+  opacity: .5;
+}
