@@ -2,5 +2,6 @@
   height: 608px;
   width: 620px;
   margin:0 48px 0 0;
-  overflow: hidden;
+  object-fit: cover;
+  object-position: center top;
 }
